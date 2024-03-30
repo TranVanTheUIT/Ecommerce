@@ -1,4 +1,4 @@
-package com.ecommerce.dto;
+package com.ecommerce.Library.dto;
 
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;

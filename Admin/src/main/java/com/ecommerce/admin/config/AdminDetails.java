@@ -1,7 +1,9 @@
 package com.ecommerce.admin.config;
 
-import com.ecommerce.model.Admin;
-import com.ecommerce.model.Role;
+import com.ecommerce.Library.model.Admin;
+
+
+import com.ecommerce.Library.model.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -30,7 +32,7 @@ public class AdminDetails implements UserDetails {
 
     @Override
     public String getUsername() {
-        return admin.getUsername();
+        return admin.getUserName();
     }
 
     @Override

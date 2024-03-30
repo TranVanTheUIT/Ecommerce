@@ -1,6 +1,7 @@
-package com.ecommerce.repository;
+package com.ecommerce.Library.repository;
 
-import com.ecommerce.model.Role;
+import com.ecommerce.Library.model.Role;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

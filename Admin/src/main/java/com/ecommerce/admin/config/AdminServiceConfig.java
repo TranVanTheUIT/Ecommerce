@@ -1,7 +1,8 @@
 package com.ecommerce.admin.config;
 
-import com.ecommerce.model.Admin;
-import com.ecommerce.repository.AdminRepository;
+
+import com.ecommerce.Library.model.Admin;
+import com.ecommerce.Library.repository.AdminRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -22,7 +23,7 @@ public class AdminServiceConfig implements UserDetailsService {
             throw new UsernameNotFoundException("Could not find username");
         }
         return new User(
-                admin.getUsername(),
+                admin.getUserName(),
                 admin.getPassword(),
                 admin.getRoles().stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList()));
 

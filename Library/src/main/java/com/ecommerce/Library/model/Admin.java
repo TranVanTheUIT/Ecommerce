@@ -1,4 +1,4 @@
-package com.ecommerce.model;
+package com.ecommerce.Library.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -18,7 +18,7 @@ public class Admin {
     private Long id;
     private String firstName;
     private String lastName;
-    private String username;
+    private String userName;
     private String password;
 
     @Lob
